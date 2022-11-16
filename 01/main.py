@@ -16,4 +16,6 @@ with open("input.txt") as file:
     reduced = list(map(lambda elf: functools.reduce(lambda a, b : a + b, elf), elves))
     reduced.sort()
     print(reduced)
-    print(reduced.pop())
+    exo1 = reduced.pop()
+    exo2 = exo1 + reduced.pop() + reduced.pop()
+    print(f"exo1: {exo1} exo2: {exo2}")
